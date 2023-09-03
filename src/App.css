@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-direction: column;
 }
 
 .card {
@@ -30,4 +31,41 @@
 .card:hover .card_up {
   opacity: 1;
   transform: translateY(-50%);
+}
+
+
+.main{
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu{
+  position: relative;
+  color:white;
+  display: flex;
+  background-color: green;
+  align-items:center;
+  height: 80px;
+  width: 70%;
+  justify-content: space-around;
+  border-radius: 12px;
+  
+}
+
+.variant{
+  cursor: pointer;
+  padding: 20px;
+  z-index: 2;
+}
+
+.selector{
+  position: absolute;
+  height: 80px;
+  background-color:green;
+  z-index: 0;
+  width: 80px;
+  left: 0;
+  border-radius: 50%;
+  top: -40px;
+  transition: all 0.3s;
 }
